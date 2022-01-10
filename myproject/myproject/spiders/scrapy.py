@@ -10,16 +10,14 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response):
         item = 1
-        conn = psycopg2.connect(dbname="store", user="postgres", password="root", host="localhost")
-        c = conn.cursor()
-        #c.execute("CREATE TABLE test10 (id serial PRIMARY KEY, title varchar, herf varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
-        #conn.commit()
+        # conn = psycopg2.connect(dbname="store", user="postgres", password="root", host="localhost")
+        # c = conn.cursor()
+        # c.execute("CREATE TABLE test10 (id serial PRIMARY KEY, title varchar, herf varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
+        # conn.commit()
         for quote in response.css('div.soom'):
             if item < 12:
                 conn = psycopg2.connect(dbname="store", user="postgres", password="root", host="localhost")
                 c = conn.cursor()
-                # c.execute("CREATE TABLE test6 (id serial PRIMARY KEY, title varchar, herf varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
-                # conn.commit()
                 title = str(quote.xpath('div/div/div/a/span/text()').get())
                 herf = 'https://www.kayak.co.in' + str(quote.css('a::attr(href)').get())
                 rating = str(quote.xpath('div/div/div/div/span/text()').get())
@@ -37,9 +35,6 @@ class QuotesSpider(scrapy.Spider):
                     data = json.loads(imgjson[0])
                     img = data.get('image')
 
-                    # dic = json.loads(response.css('html head script::text').get())
-                    # # img = str(dic["image"])
-                    # img = dic["image"]
                     if img:
                         c.execute("INSERT INTO test10 (title, herf, image, rating, price, location, amenities) VALUES (%s, %s, %s, %s, %s, %s, %s)",(title, herf, img, rating, price, location, amenities))
                         conn.commit()
