@@ -3,21 +3,22 @@
 
 ## After cloning this project, please follow the steps
 
-For postgres installation please follow this two document:
+For Postgres installation please follow this document:
 https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
-after installing postgres, please read the following documentaton for pgadmin4
+After installing Postgres, please read the following documentation for pgadmin4:
 https://kodemonk.dev/blog/installing-postgresql-on-ubuntu-20-04
-after installing pgadmin4, please create the database which name is  "store".
+After installing pgadmin4, please create the database which name is  "store".
+File directory:  VrboScraping->spiders->data_spider.py
+run project: scrapy crawl qu
 
-### Using tools/l:
-1. Html5
-2. CSS
-3. Javascript
-4. VueJS
+### Using Tools and Libraries:
+1. pgAdmin 4
+2. PyCharm
+3. Scrapy
+4. psycopg2
+5. Json
 
-### Used Api: https://rapidapi.com/weatherapi/api/weatherapi-com/ , https://api.sharetrip.net/api/v1/flight/search/airport?name=Vancouver
-
-## Assignment Details
+## After inserting data into the database
 ![100](https://user-images.githubusercontent.com/69507020/148771618-6904f71f-be80-46af-b458-9767d7f33cba.png)
 
 
