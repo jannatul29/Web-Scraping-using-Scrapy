@@ -18,5 +18,6 @@ after installing pgadmin4, please create the database which name is  "store".
 ### Used Api: https://rapidapi.com/weatherapi/api/weatherapi-com/ , https://api.sharetrip.net/api/v1/flight/search/airport?name=Vancouver
 
 ## Assignment Details
+![100](https://user-images.githubusercontent.com/69507020/148771618-6904f71f-be80-46af-b458-9767d7f33cba.png)
 
 
