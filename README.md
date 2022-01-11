@@ -19,7 +19,8 @@ cd myproject
 cd myproject
 cd spiders
 
-# Run project: scrapy crawl quotes
+# Run project: 
+scrapy crawl quotes
 ```
 
 ### Using Tools and Libraries
