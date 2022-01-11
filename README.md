@@ -1,7 +1,7 @@
 # Web-Scraping-using-Scrapy
 
 
-## After cloning this project, please follow the steps
+### After cloning this project, please follow the steps
 ``` bash
 # For Postgres installation please follow this document:
 https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
@@ -32,7 +32,7 @@ scrapy crawl quotes
 
 ### Project details
 This project is crawling the data from website , then those data store into Postgres database.
-#### Screenshoot
+##### Screenshoot
 ![100](https://user-images.githubusercontent.com/69507020/148771618-6904f71f-be80-46af-b458-9767d7f33cba.png)
 
 
