@@ -22,14 +22,16 @@ cd spiders
 # Run project: scrapy crawl quotes
 ```
 
-### Using Tools and Libraries:
+### Using Tools and Libraries
 1. pgAdmin 4
 2. PyCharm
 3. Scrapy
 4. psycopg2
 5. Json
 
-## After inserting data into the database
+### Project details
+This project is crawling the data from website , then those data store into Postgres database.
+#### Screenshoot
 ![100](https://user-images.githubusercontent.com/69507020/148771618-6904f71f-be80-46af-b458-9767d7f33cba.png)
 
 
