@@ -11,8 +11,9 @@ https://kodemonk.dev/blog/installing-postgresql-on-ubuntu-20-04
 
 # install Scrapy
 pip3 install scrapy
-#install psycopg2
+#install psycopg2 or psycopg2-binary
 pip3 install psycopg2
+pip3 install psycopg2-binary
 
 # File directory:  \myproject\myproject\spiders\scrapy.py
 cd myproject
