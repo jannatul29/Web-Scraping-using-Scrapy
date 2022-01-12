@@ -7,7 +7,7 @@
 https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
 # After installing Postgres, please read the following documentation for installing pgadmin4:
 https://kodemonk.dev/blog/installing-postgresql-on-ubuntu-20-04
-# After installing pgadmin4, please create the database which name is  "store".
+# After installing pgadmin4, please create the database which name is  "store", password will be "root", then impot database.sql
 
 # install Scrapy
 pip3 install scrapy
