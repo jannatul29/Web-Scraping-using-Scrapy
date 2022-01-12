@@ -12,7 +12,8 @@ class QuotesSpider(scrapy.Spider):
         item = 1
         conn = psycopg2.connect(dbname="store", user="postgres", password="root", host="localhost")
         c = conn.cursor()
-        c.execute("CREATE TABLE test12 (id serial PRIMARY KEY, title varchar, herf varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
+        c.execute("CREATE TABLE IF NOT EXISTS test12 (id serial PRIMARY KEY, title varchar, herf varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
+        conn.commit()
         for quote in response.css('div.soom'):
             if item < 12:
                 title = str(quote.xpath('div/div/div/a/span/text()').get())
